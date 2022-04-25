@@ -1,27 +1,17 @@
 <html lang="en"><head>
 
   <meta charset="UTF-8">
-  
-<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-<meta name="apple-mobile-web-app-title" content="CodePen">
-
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-
-
-  <title>CodePen - Notion Embed Pomodoro Timer</title>
+  <title>CodePen - Pomodoro Timer</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova+Square">
-  
-  
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 <style>
 html {
   position: relative;
@@ -33,7 +23,7 @@ body {
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #222222;
+  /* background-color: #222222; */
 }
 
 .container {
@@ -41,16 +31,23 @@ body {
   max-width: 320px;
 }
 
+.fa {
+  color: #ffbe85;
+}
+
+.fa-inverse {
+  color: black;
+}
 
 .timer p {
-  color: white;
+  /* color: white; */
   margin: 0;
   font-family: 'Varela Round', sans-serif;
 }
 
 .title {
   font-size: 1.5em;
-  color: white;
+  /* color: white; */
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -60,14 +57,14 @@ body {
 
 .progress-bar {
   text-align: left;
-  color: black;
+  /* color: black; */
   font-weight: bold;
 }
 
 .clock-time {
   font-family: 'Nova Square', sans-serif;
   font-size: 4em;
-  color: white;
+  /* color: white; */
 }
 
 .play-reset-row {
@@ -76,7 +73,7 @@ body {
 }
 
 #sessionCount {
-  color: white;
+  /* color: white; */
 }
 
 .time-adjustment-row {
@@ -86,7 +83,7 @@ body {
 .task-time-display,
 .break-time-display {
   font-size: 1.5em;
-  color: white;
+  /* color: white; /*
   font-family: 'Nova Square', sans-serif;
 }
 
@@ -109,39 +106,8 @@ body {
   transform: scale(0.9);
 }
 
-/* footer formatting */
-.footer {
-  background-color: #222222;
-  position: absolute;
-  border-top: 1px solid black;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-text {
-  font-size: 12px;
-  margin-top: 1em;
-}
-
-.footer-logos {
-  font-size: 1.2em;
-  margin-bottom: .5em;
-}
-
-.footer-logos a {
-  text-decoration: none;
-}
-
-.footer-logos i {
-  color: #777777;
-  border: 1px solid rgba(100, 100, 100, .3);
-  border-radius: 25%;
-  vertical-align: text-bottom;
-  padding: .25em;
-  margin-right: .5em;
-}
 .white {
-  color:white;
+  /* color:white; */
 }
 </style>
 
@@ -191,10 +157,10 @@ body {
  
  <hr>
   <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseTime" role="button" aria-expanded="false" aria-controls="collapseTime">
+  <button class="" type="button" data-toggle="collapse" href="#collapseTime" role="button" aria-expanded="false" aria-controls="collapseTime">
 Adjust Time
   </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSettings" aria-expanded="false" aria-controls="collapseSettings">
+  <button class="" type="button" data-toggle="collapse" data-target="#collapseSettings" aria-expanded="false" aria-controls="collapseSettings">
 Settings
   </button>
 </p>
